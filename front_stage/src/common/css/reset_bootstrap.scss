@@ -1,0 +1,12 @@
+a:focus {
+	outline: none;
+}
+.navbar-nav>li>a{
+	padding: 0;
+}
+
+.nav>li>a:focus, 
+.nav>li>a:hover {
+	background-color: #008CBA;
+	color: #fff;
+}

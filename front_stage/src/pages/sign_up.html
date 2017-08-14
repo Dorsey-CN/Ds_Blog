@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客注册页面</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../common/css/sign_up.css"/>
+</head>
+<body>
+	<div class="signup-wrapper">
+		<div class="signup-area">
+			<h3 class="title h3">欢迎注册DS_Blog</h3>
+			<form id="user-info" method="POST" action="/user/signup/" enctype="multipart/form-data">
+				<div class="username input-item">
+					<label for="inputName"><i class="must-symbol">*</i>用户名</label>
+					<input type="text" id="inputName" name="name"/>
+					<span class="warn-text user-warn">不能为空</span>
+				</div>
+				<div class="password input-item">
+					<label for="inputPassword"><i class="must-symbol">*</i>密&nbsp;码</label>
+					<input type="password" id="inputPassword" name="password"/>
+					<span class="warn-text pwd">不能为空</span>
+				</div>
+				<div class="password input-item">
+					<label for="inputPassword"><i class="must-symbol">*</i>再次输入</label>
+					<input type="password" id="againPassword"/>
+					<span class="warn-text pwd">不能为空</span>
+				</div>
+				<div class="telephone input-item">
+					<label for="inputTelephone"><i class="must-symbol">*</i>电话号码</label>
+					<input type="text" id="inputTelephone" name="telephone"/>
+					<span class="warn-text tel">不能为空</span>
+				</div>
+				<div class="user-head input-item selectHead">
+					<label for="inputPassword"><i class="must-symbol">*</i>上传头像</label>
+					<input type="file" id="selectHead" name="userHead"/>
+					<span class="warn-text">请上传头像</span>
+				</div>
+				<div class="btns">
+					<button class="btn btn-success" type="button" id="btn-signup">立即注册</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		© 2016 - 2017 东升博客 & 版权所有
+	</footer>
+
+	<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../common/js/sign_up.js"></script>
+</body>
+</html>

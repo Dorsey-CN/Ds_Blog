@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客登录页面</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../common/css/sign_in.css"/>
+</head>
+<body>
+	<div class="signup-wrapper">
+		<div class="signup-area">
+			<h3 class="title h3">欢迎登录DS_Blog</h3>
+			<form method="POST" action="/user/signin/">
+				<div class="username input-item">
+					<label for="inputName">用户名</label>
+					<input type="text" id="inputName" name="name" />
+					<p class="warn-text username-warn">用户名不能为空</p>
+				</div>
+				<div class="password input-item">
+					<label for="inputPassword">密&nbsp;码</label>
+					<input type="password" id="inputPassword" name="password"/>
+					<p class="warn-text password-warn">密码不能为空</p>
+				</div>
+				<div class="btns">
+					<button class="btn btn-success login-btn" type="button">立即登录</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		© 2016 - 2017 东升博客 & 版权所有
+	</footer>
+
+	<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../common/js/sign_in.js"></script>
+</body>
+</html>

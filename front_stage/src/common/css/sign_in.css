@@ -1,0 +1,76 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(../images/bg_signup.png) left top no-repeat;
+	background-size: cover;
+}
+
+/** signup area **/
+.signup-wrapper {
+	/*padding: 50px 0;*/
+	transform: translateY(50%);
+}
+.signup-area {
+	margin: 0 auto;
+	padding: 20px;
+	width: 50%;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.signup-area .title {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.input-item {
+	margin: 0 auto 20px;
+	width: 60%;
+}
+
+.input-item label {
+	width: 70px;
+}
+
+.input-item input {
+	padding: 0 5px;
+	width: 200px;
+	line-height: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+}
+
+.input-item .warn-text {
+	visibility: hidden;
+	padding-left: 75px;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #f01414;
+}
+
+.password-warn {
+	padding-left: 75px;
+}
+
+.btns {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.btns .btn {
+	margin-left: 75px;
+	width: 200px;
+}
+
+/** footer **/
+footer {
+	position: absolute;
+	left: 40%;
+	bottom: 5px;
+	color: #fff;
+}
